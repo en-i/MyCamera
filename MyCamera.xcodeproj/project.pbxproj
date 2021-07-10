@@ -11,6 +11,9 @@
 		DC66AE032699E8700029A2D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66AE022699E8700029A2D7 /* ContentView.swift */; };
 		DC66AE052699E8740029A2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC66AE042699E8740029A2D7 /* Assets.xcassets */; };
 		DC66AE082699E8740029A2D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC66AE072699E8740029A2D7 /* Preview Assets.xcassets */; };
+		DC66AE102699E8DC0029A2D7 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66AE0F2699E8DC0029A2D7 /* ImagePickerView.swift */; };
+		DC66AE122699F5510029A2D7 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66AE112699F5510029A2D7 /* ActivityView.swift */; };
+		DC66AE142699F9FB0029A2D7 /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66AE132699F9FB0029A2D7 /* PHPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		DC66AE042699E8740029A2D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC66AE072699E8740029A2D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC66AE092699E8740029A2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC66AE0F2699E8DC0029A2D7 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		DC66AE112699F5510029A2D7 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		DC66AE132699F9FB0029A2D7 /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			children = (
 				DC66AE002699E8700029A2D7 /* MyCameraApp.swift */,
 				DC66AE022699E8700029A2D7 /* ContentView.swift */,
+				DC66AE0F2699E8DC0029A2D7 /* ImagePickerView.swift */,
+				DC66AE112699F5510029A2D7 /* ActivityView.swift */,
+				DC66AE132699F9FB0029A2D7 /* PHPickerView.swift */,
 				DC66AE042699E8740029A2D7 /* Assets.xcassets */,
 				DC66AE092699E8740029A2D7 /* Info.plist */,
 				DC66AE062699E8740029A2D7 /* Preview Content */,
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC66AE142699F9FB0029A2D7 /* PHPickerView.swift in Sources */,
 				DC66AE032699E8700029A2D7 /* ContentView.swift in Sources */,
+				DC66AE122699F5510029A2D7 /* ActivityView.swift in Sources */,
+				DC66AE102699E8DC0029A2D7 /* ImagePickerView.swift in Sources */,
 				DC66AE012699E8700029A2D7 /* MyCameraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +281,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyCamera/Preview Content\"";
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyCamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -291,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyCamera/Preview Content\"";
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyCamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
