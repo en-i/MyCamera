@@ -12,22 +12,15 @@ struct ContentView: View {
     
     @State var isShowSheet = false
     
-    @State var isShowActivity = false
-    
     @State var isPhotoLibrary = false
     
     @State var isShowAction = false
     var body: some View {
         VStack {
             Spacer()
-            
-            if let unwrapCaptureImage = captureImage{
-                Image(uiImage: unwrapCaptureImage)
-                    .resizable()
-                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-            }
-            Spacer()
             Button(action: {
+                captureImage = nil
+                
                 isShowAction = true
             }) {
                 Text("カメラを起動する")
@@ -40,11 +33,16 @@ struct ContentView: View {
             
             .padding()
             .sheet(isPresented: $isShowSheet){
-                if isPhotoLibrary{
-                    PHPickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
+                if let unwrapCaptureImage = captureImage{
+                    EffectView(isShowSheet: $isShowSheet, caputureImage: unwrapCaptureImage)
                 }else{
-                    ImagePickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
+                    if isPhotoLibrary{
+                        PHPickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
+                    }else{
+                        ImagePickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
+                    }
                 }
+                
             }
             
             .actionSheet(isPresented: $isShowAction) {
@@ -65,25 +63,6 @@ struct ContentView: View {
                     }),
                     .cancel()
                     ])
-            }
-            
-            Button(action: {
-                if let _ = captureImage{
-                    isShowActivity = true
-                }
-            }) {
-                Text("SNSに投稿する")
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 50.0)
-                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                
-                
-            }
-            .padding()
-            .sheet(isPresented: $isShowActivity){
-                ActivityView(shareItems: [captureImage!])
             }
         }
     }

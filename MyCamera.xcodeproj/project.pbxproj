@@ -14,6 +14,8 @@
 		DC66AE102699E8DC0029A2D7 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66AE0F2699E8DC0029A2D7 /* ImagePickerView.swift */; };
 		DC66AE122699F5510029A2D7 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66AE112699F5510029A2D7 /* ActivityView.swift */; };
 		DC66AE142699F9FB0029A2D7 /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66AE132699F9FB0029A2D7 /* PHPickerView.swift */; };
+		DCB2C279269A0D9F004A0087 /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2C278269A0D9F004A0087 /* EffectView.swift */; };
+		DCB2C27B269A1456004A0087 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2C27A269A1456004A0087 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DC66AE0F2699E8DC0029A2D7 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		DC66AE112699F5510029A2D7 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		DC66AE132699F9FB0029A2D7 /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
+		DCB2C278269A0D9F004A0087 /* EffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
+		DCB2C27A269A1456004A0087 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DC66AE0F2699E8DC0029A2D7 /* ImagePickerView.swift */,
 				DC66AE112699F5510029A2D7 /* ActivityView.swift */,
 				DC66AE132699F9FB0029A2D7 /* PHPickerView.swift */,
+				DCB2C278269A0D9F004A0087 /* EffectView.swift */,
+				DCB2C27A269A1456004A0087 /* UIImageExtension.swift */,
 				DC66AE042699E8740029A2D7 /* Assets.xcassets */,
 				DC66AE092699E8740029A2D7 /* Info.plist */,
 				DC66AE062699E8740029A2D7 /* Preview Content */,
@@ -149,7 +155,9 @@
 			files = (
 				DC66AE142699F9FB0029A2D7 /* PHPickerView.swift in Sources */,
 				DC66AE032699E8700029A2D7 /* ContentView.swift in Sources */,
+				DCB2C27B269A1456004A0087 /* UIImageExtension.swift in Sources */,
 				DC66AE122699F5510029A2D7 /* ActivityView.swift in Sources */,
+				DCB2C279269A0D9F004A0087 /* EffectView.swift in Sources */,
 				DC66AE102699E8DC0029A2D7 /* ImagePickerView.swift in Sources */,
 				DC66AE012699E8700029A2D7 /* MyCameraApp.swift in Sources */,
 			);

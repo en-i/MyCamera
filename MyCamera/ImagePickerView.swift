@@ -24,7 +24,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
                 parent.captureImage = originalImage
             }
             
-            parent.isShowSheet = false
+            parent.isShowSheet = true
         }
         
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

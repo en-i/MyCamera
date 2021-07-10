@@ -27,14 +27,13 @@ struct PHPickerView: UIViewControllerRepresentable {
                     (image,error) in
                     if let unwrapImage = image as? UIImage{
                         self.parent.captureImage = unwrapImage
-                    }else{
-                        
                     }
                 }
+                parent.isShowSheet = true
             }else{
-                
+                parent.isShowSheet = false
             }
-            parent.isShowSheet = false
+            
         }
     }
     
